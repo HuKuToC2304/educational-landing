@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto-Bold.woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --border-radius: 20px;
+    --padding-input: 11px 24px;
+    --padding-button: 11px 54px;
+    --border-radius-input: 10px;
+
+
+    --button-color: #3D3BFF;
+}
+
+body {
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 40px 0 80px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1168px;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    padding: 35px 25px;
+}
+
+.burger span {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.title h1 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+.img-main img {
+    max-width: 100%; /*Благодаря max-width 100%  изображение становится адаптивным*/
+    margin-top: 5rem;
+    margin-bottom: 3.75rem;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtitle p {
+    max-width: 45%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 37px 50px;
+    border-radius: 20px;
+    margin-top: 80px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 416px;
+    gap: 8px;
+}
+
+.form > h2 {
+    font-size: 40px;
+    line-height: 54px;
+    max-width: 45%;
+}
+
+.form-field {
+    width: 100%;
+    padding: var(--padding-input);
+    border: none;
+    border-radius: var(--border-radius-input);
+}
+
+.field-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-button {
+    display: inline-flex;
+    align-items: flex-start;
+    background-color: var(--button-color);
+    border: none;
+    padding: var(--padding-button);
+    border-radius: var(--border-radius-input);
+    color: #fff;
+    max-width: 180px;
+    cursor: pointer;
+}
+
