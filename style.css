@@ -82,13 +82,13 @@ body {
     font-size: min(4.16vw, 60px);
     font-style: normal;
     font-weight: 600;
-    margin-top: 100px;
+    margin-top: clamp( 50px, 6.94vw, 100px);
 }
 
 .img-main img {
     max-width: 100%; /*Благодаря max-width 100%  изображение становится адаптивным*/
-    margin-top: 5rem;
-    margin-bottom: 3.75rem;
+    margin-top: clamp(40px, 5.55vw, 80px);
+    margin-bottom: clamp( 30px, 4.16vw ,60px);
 }
 
 .subtitle {
@@ -109,7 +109,7 @@ body {
     background-color: #f1f1f1;
     padding: 37px 50px;
     border-radius: 20px;
-    margin-top: 80px;
+    margin-top: clamp(40px, 5.55vw, 80px);
 }
 
 .field {
@@ -143,7 +143,7 @@ body {
 .field-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: clamp(18px , 1.6vw, 24px);
 }
 
 .form-button {
@@ -171,8 +171,6 @@ body {
 
 @media (max-width: 950px) {
 
-    
-    
     .form{
         flex-wrap: wrap;
         justify-content: center;
@@ -182,5 +180,9 @@ body {
     .form h2 {
         text-align: center;
         max-width: 600px;
+    }
+
+    .field {
+        width: 450px;
     }
 }
